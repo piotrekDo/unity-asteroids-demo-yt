@@ -1,0 +1,25 @@
+:root {
+}
+
+.container {
+    flex-grow: 1;
+}
+
+.top-bar {
+    flex-grow: 0;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.24);
+    flex-direction: row;
+}
+
+.score-value {
+    font-size: 30px;
+    color: rgb(229, 229, 229);
+    -unity-font-definition: url("project://database/Assets/Fonts/Orbitron-Regular.ttf?fileID=12800000&guid=1b535806ada122a4bae22a0621835adf&type=3#Orbitron-Regular");
+}
+
+.score-label {
+    font-size: 30px;
+    color: rgb(229, 229, 229);
+    -unity-font-definition: url("project://database/Assets/Fonts/Orbitron-Bold.ttf?fileID=12800000&guid=b93aa646c40cd15468ab8a0ce224e9a1&type=3#Orbitron-Bold");
+}

@@ -1,0 +1,13 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/BaseStyles.uss?fileID=7433441132597879392&amp;guid=37ea0e46fcb907a4788bc3b551bf1025&amp;type=3#BaseStyles"/>
+    <ui:VisualElement name="Container" class="container">
+        <ui:VisualElement name="TopBar" class="top-bar" style="background-color: rgba(0, 0, 0, 0.11); padding-left: 25px; padding-right: 25px;">
+            <ui:Label text="Score: " name="ScoreLabel" emoji-fallback-support="false" class="score-label"/>
+            <ui:Label text="00" name="ScoreValue" data-source-type="ScoreManager, Assembly-CSharp" class="score-value">
+                <Bindings>
+                    <ui:DataBinding property="text" data-source-path="m_score" binding-mode="ToTarget"/>
+                </Bindings>
+            </ui:Label>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
