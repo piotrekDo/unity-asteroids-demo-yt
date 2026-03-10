@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class ShipController : BoundedEntity {
+
     private float m_turnInput;
     private float m_forwardInput;
 
@@ -15,8 +17,60 @@ public class ShipController : BoundedEntity {
     [SerializeField] private float m_fireDeley;
     [SerializeField] private float m_fireCount;
 
+    [SerializeField] private bool m_isDead;
+
     private bool m_isFiring;
     private float m_fireTimer = 0f;
+
+    protected override void OnEnable() {
+        GameEvents.Instance.OnRetry += OnRetry;
+        base.OnEnable();
+    }
+
+    protected override void OnDisable() {
+        GameEvents.Instance.OnRetry -= OnRetry;
+        base.OnDisable();   
+    }
+
+
+    private void OnRetry() {
+        SetPlayerAsDead();
+        StartCoroutine(RespawnPlayer());
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.TryGetComponent(out AsteroidController asteroid)) {
+            LoseHealth(asteroid.MaxHealth);
+        }
+    }
+
+    protected override void OnDie() {
+        GameEvents.Instance.PlayerDies();
+        SetPlayerAsDead();
+        StartCoroutine(RespawnPlayer());
+    }
+
+    protected void SetPlayerAsDead() {
+        m_isDead = true;
+        m_spriteRenderer.enabled = false;
+        m_collider.enabled = false;
+        m_rigidbody.simulated = false;
+    }
+
+    private IEnumerator RespawnPlayer() {
+        yield return new WaitForSeconds(.5f);
+        m_rigidbody.position = Vector3.zero;
+        m_rigidbody.transform.position = Vector3.zero;
+        m_rigidbody.rotation = 0;
+        m_rigidbody.linearVelocity = Vector2.zero;
+        m_spriteRenderer.enabled = true;
+        ResetHealth();
+        yield return new WaitForSeconds(.5f);
+        m_isDead = false;
+        m_rigidbody.simulated = true;
+        yield return new WaitForSeconds(2f);
+        m_collider.enabled = true;
+    }
 
     void OnMove(InputValue value) {
         Vector2 moveInputDirection = value.Get<Vector2>();
@@ -25,7 +79,6 @@ public class ShipController : BoundedEntity {
     }
 
     void OnAttack(InputValue value) {
-        Debug.Log(value.isPressed);
         m_isFiring = value.isPressed;
     }
 
@@ -39,6 +92,8 @@ public class ShipController : BoundedEntity {
     }
 
     protected override void LateUpdate() {
+        if (m_isDead) return;
+
         m_rigidbody.rotation -= (m_turnInput * (m_turnSpeed * 100f)) * Time.deltaTime;
 
         if (m_forwardInput > 0) {

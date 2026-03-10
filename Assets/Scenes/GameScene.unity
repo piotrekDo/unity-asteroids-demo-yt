@@ -579,6 +579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
   m_score: 0
   m_topScore: 0
+  m_currentLives: 0
+  m_maxLives: 1
 --- !u!1 &1581946505
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +621,7 @@ MonoBehaviour:
     width: 110
     height: 60
   m_health: 0
+  m_maxHealth: 5
   m_maxSpeed: 25
   m_turnSpeed: 2.5
   m_moveSpeed: 5
@@ -626,6 +629,7 @@ MonoBehaviour:
   m_bulletPrefarb: {fileID: 1496112312781581469, guid: 6db757d34550d62439ce6e6df99f33e2, type: 3}
   m_fireDeley: 0.1
   m_fireCount: 0
+  m_isDead: 0
 --- !u!114 &1581946507
 MonoBehaviour:
   m_ObjectHideFlags: 0

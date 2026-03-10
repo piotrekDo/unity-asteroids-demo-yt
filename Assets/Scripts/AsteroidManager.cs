@@ -1,7 +1,7 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 public class AsteroidManager : MonoBehaviour {
 
@@ -17,8 +17,30 @@ public class AsteroidManager : MonoBehaviour {
 
     private int m_current_AsteroidCount;
 
-    private void Start() {
+    private void OnEnable() {
+        GameEvents.Instance.OnRetry += OnRetry;
+        GameEvents.Instance.OnGameOver += OnGameOver;
+    }
+
+    private void OnDisable() {
+        GameEvents.Instance.OnRetry -= OnRetry;
+        GameEvents.Instance.OnGameOver -= OnGameOver;
+    }
+
+    private void OnRetry() {
+        foreach (Transform t in transform) {
+            Destroy(t.gameObject);
+        }
         StartCoroutine(SpawnInitialAsteroids());
+    }
+
+    private void OnGameOver() {
+        StopAllCoroutines();
+        m_current_AsteroidCount = 0;
+    }
+
+    private void Start() {
+        OnRetry();
     }
 
     private IEnumerator AsteroidSpawner() {

@@ -21,10 +21,10 @@ public class AsteroidController : BoundedEntity {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        m_health--;
-        if (m_health < 1) {
-            Debug.Log("die?");
-            onAsteroidDie?.Invoke(this);
-        }
+        LoseHealth(1);
+    }
+
+    protected override void OnDie() {
+        onAsteroidDie?.Invoke(this);
     }
 }

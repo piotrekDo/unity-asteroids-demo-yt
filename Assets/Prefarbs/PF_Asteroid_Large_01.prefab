@@ -360,7 +360,8 @@ MonoBehaviour:
     y: -30
     width: 110
     height: 60
-  m_health: 4
+  m_health: 0
+  m_maxHealth: 4
   m_size: 3
   m_forcePower: 10
   m_angularPower: 180
