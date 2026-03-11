@@ -356,12 +356,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AsteroidController
   m_bounds:
     serializedVersion: 2
-    x: -55
-    y: -30
-    width: 110
-    height: 60
+    x: -80
+    y: -40
+    width: 160
+    height: 80
   m_health: 0
   m_maxHealth: 4
   m_size: 3
-  m_forcePower: 10
-  m_angularPower: 180
+  m_forcePower: 20
+  m_constantPower: 1.5
+  m_angularPower: 45

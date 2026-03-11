@@ -13,6 +13,7 @@ public class AsteroidManager : MonoBehaviour {
     [SerializeField] private int m_maximumAsteroids;
     [SerializeField] private float m_spawnDeley;
     [SerializeField] private List<GameObject> m_asteroidPrefarbs;
+    [SerializeField] private GameObject m_collectablePrefarb;
     [SerializeField] private Rect m_spawnArea;
 
     private int m_current_AsteroidCount;
@@ -48,16 +49,16 @@ public class AsteroidManager : MonoBehaviour {
             yield return new WaitForEndOfFrame();
         }
 
-        SpawnRandomAsteroid(3, GetSpawnPointOutside());
+        SpawnRandomAsteroid(3, GetSpawnPointRandom());
         yield return new WaitForSeconds(m_spawnDeley);
         StartCoroutine(AsteroidSpawner());
     }
 
     private IEnumerator SpawnInitialAsteroids() {
-        for (int i = 0; i < m_startingAsteroids -1; ++i) {
+        for (int i = 0; i < m_startingAsteroids - 1; ++i) {
             yield return new WaitForSeconds(0.1f);
 
-            SpawnRandomAsteroid(ASTEROID_BIG, GetSpawnPointOutside());
+            SpawnRandomAsteroid(ASTEROID_BIG, GetSpawnPointRandom());
         }
 
         StartCoroutine(AsteroidSpawner());
@@ -93,6 +94,8 @@ public class AsteroidManager : MonoBehaviour {
         if (asteroid.Size == ASTEROID_BIG)
             m_current_AsteroidCount--;
 
+        SpawnCollectable(asteroidPoint);
+
         int newAsteroidsCount = 0;
         if (newAsteroidSize == ASTEROID_MID) {
             newAsteroidsCount = Random.Range(2, 4);
@@ -104,6 +107,49 @@ public class AsteroidManager : MonoBehaviour {
             SpawnRandomAsteroid(newAsteroidSize, (Random.insideUnitCircle * 5f) + asteroidPoint);
         }
     }
+
+    private void SpawnCollectable(Vector2 position) {
+        if (Random.Range(0f, 1f) > .5f) {
+            GameObject collectable = Instantiate(m_collectablePrefarb, transform);
+            collectable.transform.position = position;
+        }
+    }
+
+    private Vector2 GetSpawnPointRandom() {
+        int side = Random.Range(0, 4);
+
+        float x = 0;
+        float y = 0;
+
+        switch (side) {
+            case 0: // top
+                x = Random.Range(m_spawnArea.xMin, m_spawnArea.xMax);
+                y = m_spawnArea.yMax;
+                break;
+            case 1: // right
+                x = m_spawnArea.xMax;
+                y = Random.Range(m_spawnArea.yMin, m_spawnArea.yMax);
+                break;
+            case 2: // bottom
+                x = Random.Range(m_spawnArea.xMin, m_spawnArea.xMax);
+                y = m_spawnArea.yMin;
+                break;
+            case 3: // left
+                x = m_spawnArea.xMin;
+                y = Random.Range(m_spawnArea.yMin, m_spawnArea.yMax);
+                break;
+        }
+
+        return new Vector2(x, y);
+    }
+
+
+
+
+
+
+
+
 
     private Vector2 GetSpawnPointOutside() {
         float offset = 2f;
@@ -122,7 +168,7 @@ public class AsteroidManager : MonoBehaviour {
 
         int side = Random.Range(0, 4);
 
-   
+
         switch (side) {
             case 0: // top
                 return new Vector2(Random.Range(xMin, xMax), yMax + offset);

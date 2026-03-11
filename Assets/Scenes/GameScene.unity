@@ -580,7 +580,7 @@ MonoBehaviour:
   m_score: 0
   m_topScore: 0
   m_currentLives: 0
-  m_maxLives: 1
+  m_maxLives: 3
 --- !u!1 &1581946505
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,19 +616,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShipController
   m_bounds:
     serializedVersion: 2
-    x: -55
+    x: -75
     y: -30
-    width: 110
+    width: 150
     height: 60
   m_health: 0
   m_maxHealth: 5
+  m_maxBoostingSpeed: 40
   m_maxSpeed: 25
   m_turnSpeed: 2.5
   m_moveSpeed: 5
+  m_boostSpeed: 20
   m_stoppingPower: 5
   m_bulletPrefarb: {fileID: 1496112312781581469, guid: 6db757d34550d62439ce6e6df99f33e2, type: 3}
   m_fireDeley: 0.1
   m_fireCount: 0
+  m_isBoosting: 0
   m_isDead: 0
 --- !u!114 &1581946507
 MonoBehaviour:
@@ -728,8 +731,8 @@ Transform:
   m_GameObject: {fileID: 1581946505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 0.28, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.03, y: -0.54, z: 0}
+  m_LocalScale: {x: 1.0212, y: 1.0212, z: 1.0212}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -936,12 +939,13 @@ MonoBehaviour:
   - {fileID: 7367989562441243724, guid: ce7faa1d88d2970479ac6adf2e8858e6, type: 3}
   - {fileID: 7367989562441243724, guid: f45cb668471e5d146bcccfa5666171eb, type: 3}
   - {fileID: 7367989562441243724, guid: 2853c5f61a1b49b45a8e1c0f194b0d6b, type: 3}
+  m_collectablePrefarb: {fileID: 1070643635991558268, guid: f0af851f17a3ea547a4c3e366dfb5b64, type: 3}
   m_spawnArea:
     serializedVersion: 2
-    x: -40
-    y: -25
-    width: 80
-    height: 50
+    x: -55
+    y: -30
+    width: 110
+    height: 60
 --- !u!4 &1693527238
 Transform:
   m_ObjectHideFlags: 0
