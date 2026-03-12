@@ -7,7 +7,8 @@ public class BoundedEntity : MonoBehaviour {
     protected Collider2D m_collider;
     protected Rigidbody2D m_rigidbody;
 
-    [SerializeField] protected Rect m_bounds;
+    float left, right, top, bottom;
+
     [SerializeField] protected int m_health;
     [SerializeField] protected int m_maxHealth = 1;
 
@@ -18,29 +19,30 @@ public class BoundedEntity : MonoBehaviour {
         m_spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         m_collider = gameObject.GetComponent<Collider2D>();
         m_rigidbody = GetComponent<Rigidbody2D>();
+
+        m_spriteRenderer = GetComponent<SpriteRenderer>();
+        m_collider = GetComponent<Collider2D>();
+        m_rigidbody = GetComponent<Rigidbody2D>();
+
+        float height = Camera.main.orthographicSize;
+        float width = height * Camera.main.aspect;
+
+        top = height;
+        bottom = -height;
+        right = width;
+        left = -width;
     }
 
     protected virtual void LateUpdate() {
-        if (!m_bounds.Contains(transform.position)) {
-            Vector2 position = transform.position;
-            if (position.x < m_bounds.xMin) {
-                position.x = m_bounds.xMax - (m_bounds.xMin - position.x);
-            }
+        float xRange = right - left;
+        float yRange = top - bottom;
 
-            if (position.x > m_bounds.xMax) {
-                position.x = m_bounds.xMin + (position.x - m_bounds.xMax);
-            }
+        Vector3 pos = transform.position;
 
-            if (position.y < m_bounds.yMin) {
-                position.y = m_bounds.yMax - (m_bounds.yMin - position.y);
-            }
+        pos.x = Mathf.Repeat(pos.x - left, xRange) + left;
+        pos.y = Mathf.Repeat(pos.y - bottom, yRange) + bottom;
 
-            if (position.y > m_bounds.yMax) {
-                position.y = m_bounds.yMin + (position.y - m_bounds.yMax);
-            }
-
-            m_rigidbody.position = position;
-        }
+        transform.position = pos;
     }
 
     protected virtual void OnEnable() {
@@ -59,6 +61,11 @@ public class BoundedEntity : MonoBehaviour {
         if (m_health <= 0) {
             OnDie();
         }
+    }
+
+    protected void SpawnVFX(GameObject vfxPrefarb) {
+        GameObject vfx = GameObject.Instantiate(vfxPrefarb);
+        vfx.transform.position = transform.position;
     }
 
     protected virtual void OnDie() {

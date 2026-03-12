@@ -12,6 +12,7 @@ public class AsteroidManager : MonoBehaviour {
     [SerializeField] private int m_startingAsteroids;
     [SerializeField] private int m_maximumAsteroids;
     [SerializeField] private float m_spawnDeley;
+    [SerializeField] private float m_collectableSpawnRate;
     [SerializeField] private List<GameObject> m_asteroidPrefarbs;
     [SerializeField] private GameObject m_collectablePrefarb;
     [SerializeField] private Rect m_spawnArea;
@@ -109,7 +110,7 @@ public class AsteroidManager : MonoBehaviour {
     }
 
     private void SpawnCollectable(Vector2 position) {
-        if (Random.Range(0f, 1f) > .5f) {
+        if (Random.Range(0f, 1f) < m_collectableSpawnRate) {
             GameObject collectable = Instantiate(m_collectablePrefarb, transform);
             collectable.transform.position = position;
         }

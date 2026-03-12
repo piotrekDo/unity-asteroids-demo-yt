@@ -1324,6 +1324,10 @@ PrefabInstance:
       propertyPath: m_maxHealth
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 630559469986819719, guid: e68f3e111f49b0049a19828681d13bdf, type: 3}
+      propertyPath: m_asteroidDeathFX
+      value: 
+      objectReference: {fileID: 3498457182841984739, guid: 7a8da08d44358984ca0aed5be8c75a10, type: 3}
     - target: {fileID: 4067882100990504357, guid: e68f3e111f49b0049a19828681d13bdf, type: 3}
       propertyPath: m_Mass
       value: 25

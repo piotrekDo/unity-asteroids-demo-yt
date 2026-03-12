@@ -7,13 +7,14 @@ public class AsteroidController : BoundedEntity {
     [SerializeField] private float m_forcePower;
     [SerializeField] private float m_constantPower;
     [SerializeField] private float m_angularPower;
+    [SerializeField] private GameObject m_asteroidDeathFX;
 
     public int Size => m_size;
 
     public event Action<AsteroidController> onAsteroidDie;
 
     private void Start() {
-        this.m_rigidbody.AddForce(UnityEngine.Random.insideUnitCircle * this.m_rigidbody.mass * m_forcePower,ForceMode2D.Impulse);
+        this.m_rigidbody.AddForce(UnityEngine.Random.insideUnitCircle * this.m_rigidbody.mass * m_forcePower, ForceMode2D.Impulse);
         this.m_rigidbody.angularVelocity = UnityEngine.Random.Range(-m_angularPower, m_angularPower);
     }
 
@@ -23,10 +24,13 @@ public class AsteroidController : BoundedEntity {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        LoseHealth(1);
+        if (collision.gameObject.TryGetComponent(out Bullet bullet)) {
+            LoseHealth(1);
+        }
     }
 
     protected override void OnDie() {
+        SpawnVFX(m_asteroidDeathFX);
         onAsteroidDie?.Invoke(this);
     }
 }

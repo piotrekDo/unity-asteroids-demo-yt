@@ -3,6 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
     [SerializeField] private float m_forwardSpeed;
     [SerializeField] private float m_maximumLifetime;
+    [SerializeField] private GameObject m_bulltetHitFX;
 
     private float m_currentLifetime;
 
@@ -16,6 +17,12 @@ public class Bullet : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
+        SpawnVfxHit();
         Destroy(gameObject);
+    }
+
+    private void SpawnVfxHit() {
+        GameObject hitEffect = GameObject.Instantiate(m_bulltetHitFX);
+        hitEffect.transform.position = transform.position;
     }
 }

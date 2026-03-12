@@ -1,12 +1,14 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.VFX;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class ShipController : BoundedEntity {
 
     private float m_turnInput;
     private float m_forwardInput;
+
 
     [SerializeField] private float m_maxBoostingSpeed;
     [SerializeField] private float m_maxSpeed;
@@ -16,9 +18,13 @@ public class ShipController : BoundedEntity {
     [SerializeField] private float m_stoppingPower;
 
     [SerializeField] private GameObject m_bulletPrefarb;
+    [SerializeField] private GameObject m_deathVFXPrefarb;
     [SerializeField] private float m_fireDeley;
     [SerializeField] private float m_fireCount;
     [SerializeField] private bool m_isBoosting;
+
+    [SerializeField] private VisualEffect m_leftThruster;
+    [SerializeField] private VisualEffect m_rightThruster;
 
     [SerializeField] private bool m_isDead;
 
@@ -49,6 +55,7 @@ public class ShipController : BoundedEntity {
 
     protected override void OnDie() {
         GameEvents.Instance.PlayerDies();
+        SpawnVFX(m_deathVFXPrefarb);
         SetPlayerAsDead();
         StartCoroutine(RespawnPlayer());
     }
@@ -62,27 +69,56 @@ public class ShipController : BoundedEntity {
 
     private IEnumerator RespawnPlayer() {
         yield return new WaitForSeconds(.5f);
-        m_rigidbody.position = Vector3.zero;
-        m_rigidbody.transform.position = Vector3.zero;
-        m_rigidbody.rotation = 0;
+
+        m_rigidbody.position = Vector2.zero;
+        m_rigidbody.rotation = 0f;
+
+        transform.position = Vector3.zero;
+        transform.rotation = Quaternion.identity;
+
         m_rigidbody.linearVelocity = Vector2.zero;
+        m_rigidbody.angularVelocity = 0f;
+
         m_spriteRenderer.enabled = true;
         ResetHealth();
+
         yield return new WaitForSeconds(.5f);
+
         m_isDead = false;
         m_rigidbody.simulated = true;
+
         yield return new WaitForSeconds(2f);
         m_collider.enabled = true;
     }
 
+    void EnableThrusters(bool left, bool right) {
+        m_leftThruster.enabled = left;
+        m_rightThruster.enabled = right;
+    }
+
     void OnBoost(InputValue value) {
         m_isBoosting = value.Get<float>() > 0f;
+
+        if (m_isBoosting) {
+            EnableThrusters(true, true);
+        } else if (m_forwardInput == 0) {
+            EnableThrusters(false, false);
+        }
+
+        m_leftThruster.SetBool("isBoosting", m_isBoosting);
+        m_rightThruster.SetBool("isBoosting", m_isBoosting);
     }
 
     void OnMove(InputValue value) {
         Vector2 moveInputDirection = value.Get<Vector2>();
         m_turnInput = moveInputDirection.x;
         m_forwardInput = moveInputDirection.y;
+
+        if (m_forwardInput > 0) {
+            EnableThrusters(true, true);
+        } else {
+            EnableThrusters(false, false);
+        }
     }
 
     void OnAttack(InputValue value) {

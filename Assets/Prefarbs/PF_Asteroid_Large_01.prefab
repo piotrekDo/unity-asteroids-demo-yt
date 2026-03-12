@@ -354,15 +354,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 032f567728f3b834e95a296f51df9491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AsteroidController
-  m_bounds:
-    serializedVersion: 2
-    x: -80
-    y: -40
-    width: 160
-    height: 80
   m_health: 0
   m_maxHealth: 4
   m_size: 3
   m_forcePower: 20
   m_constantPower: 1.5
   m_angularPower: 45
+  m_asteroidDeathFX: {fileID: 82777978036220819, guid: 9abbf52981cdc1147bebe511eb7fcd48, type: 3}

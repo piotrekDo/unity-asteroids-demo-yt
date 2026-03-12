@@ -1328,6 +1328,10 @@ PrefabInstance:
       propertyPath: m_forcePower
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 630559469986819719, guid: e68f3e111f49b0049a19828681d13bdf, type: 3}
+      propertyPath: m_asteroidDeathFX
+      value: 
+      objectReference: {fileID: 9147352158581930619, guid: bf1535856be9b094cabb9e5676677129, type: 3}
     - target: {fileID: 4067882100990504357, guid: e68f3e111f49b0049a19828681d13bdf, type: 3}
       propertyPath: m_Mass
       value: 50
