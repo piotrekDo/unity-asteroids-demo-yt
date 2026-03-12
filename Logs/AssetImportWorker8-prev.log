@@ -4301,3 +4301,574 @@ Received Import Request.
 Start importing Assets/Prefarbs/PF_Asteroid_Large_01.prefab using Guid(e68f3e111f49b0049a19828681d13bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '814f27ce0c974b8a9a84aef3bbc6ac00') in 0.0347799 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.565 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.516 seconds
+Domain Reload Profiling: 1081ms
+	BeginReloadAssembly (174ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (333ms)
+		LoadAssemblies (244ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (137ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (517ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (405ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (232ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 1.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7575 unused Assets / (5.0 MB). Loaded Objects now: 8798.
+Memory consumption went from 202.7 MB to 197.7 MB.
+Total: 10.334000 ms (FindLiveObjects: 0.746600 ms CreateObjectMapping: 0.465100 ms MarkObjects: 7.175400 ms  DeleteObjects: 1.945900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 59.390222 seconds.
+  path: Assets/VisualEffects/AsteroidDeathFX.vfx
+  artifactKey: Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualEffects/AsteroidDeathFX.vfx using Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0cbadf422770b8e0ce7c31218b6e355') in 0.0293145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.545 seconds
+Refreshing native plugins compatible for Editor in 1.29 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.502 seconds
+Domain Reload Profiling: 1047ms
+	BeginReloadAssembly (159ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (330ms)
+		LoadAssemblies (240ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (155ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (139ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (503ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (397ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (232ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 1.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7575 unused Assets / (4.5 MB). Loaded Objects now: 8801.
+Memory consumption went from 202.7 MB to 198.2 MB.
+Total: 7.773400 ms (FindLiveObjects: 0.853800 ms CreateObjectMapping: 0.563400 ms MarkObjects: 4.783500 ms  DeleteObjects: 1.572100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 51.949709 seconds.
+  path: Assets/VisualEffects/AsteroidDeathFX.vfx
+  artifactKey: Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualEffects/AsteroidDeathFX.vfx using Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dccd8796cd7830a04dac27c1d0b3e65e') in 0.0354046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.549 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.498 seconds
+Domain Reload Profiling: 1047ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (332ms)
+		LoadAssemblies (247ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (151ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (135ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (498ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (393ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (225ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7575 unused Assets / (4.5 MB). Loaded Objects now: 8804.
+Memory consumption went from 202.7 MB to 198.2 MB.
+Total: 8.325900 ms (FindLiveObjects: 0.834500 ms CreateObjectMapping: 0.587700 ms MarkObjects: 5.323900 ms  DeleteObjects: 1.579300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 208.012619 seconds.
+  path: Assets/VisualEffects/AsteroidDeathFX.vfx
+  artifactKey: Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualEffects/AsteroidDeathFX.vfx using Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de3b8a8293c8f662e74265719589367d') in 0.0295725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.395484 seconds.
+  path: Assets/VisualEffects/AsteroidDeathFX.vfx
+  artifactKey: Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualEffects/AsteroidDeathFX.vfx using Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc095565c6441f88d7db664b81f5debb') in 0.0027848 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 525.986531 seconds.
+  path: Assets/VisualEffects/AsteroidDeathFX.vfx
+  artifactKey: Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualEffects/AsteroidDeathFX.vfx using Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3e3b735b5cc458dd4e2d35bc9e418da') in 0.0031648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.997921 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX.prefab
+  artifactKey: Guid(9abbf52981cdc1147bebe511eb7fcd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX.prefab using Guid(9abbf52981cdc1147bebe511eb7fcd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19bd283166a414bbdc046dea924b6e5a') in 0.2461172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 98
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.987262 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX Variant.prefab
+  artifactKey: Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX Variant.prefab using Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '196a335daea21fc5ab7fab85d91f4b81') in 0.0151663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 105
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.034036 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX_big.prefab
+  artifactKey: Guid(9abbf52981cdc1147bebe511eb7fcd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX_big.prefab using Guid(9abbf52981cdc1147bebe511eb7fcd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be2bf5bc27f17454f48ebcebc9cbfb85') in 0.0113086 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 98
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.900734 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX Variant.prefab
+  artifactKey: Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX Variant.prefab using Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fc3743913a49bff7d9aee334d734ed4') in 0.0115693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 105
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.522999 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab
+  artifactKey: Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab using Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f01caaecf58cc9b935044684dcf6f5a') in 0.0109487 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 105
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.936319 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX Variant.prefab
+  artifactKey: Guid(7a8da08d44358984ca0aed5be8c75a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX Variant.prefab using Guid(7a8da08d44358984ca0aed5be8c75a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88d184bfd88703d02930b66375f7576e') in 0.0127091 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 112
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.593091 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX small.prefab
+  artifactKey: Guid(7a8da08d44358984ca0aed5be8c75a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX small.prefab using Guid(7a8da08d44358984ca0aed5be8c75a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e960a8fa8ffa83cc2160808c02a31d1e') in 0.0111763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 112
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.939350 seconds.
+  path: Assets/Prefarbs/PF_Asteroid_Large_01.prefab
+  artifactKey: Guid(e68f3e111f49b0049a19828681d13bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_Asteroid_Large_01.prefab using Guid(e68f3e111f49b0049a19828681d13bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bc043c380b18853927eee15bcfef647') in 0.0131389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 107
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.003828 seconds.
+  path: Assets/Prefarbs/PF_Asteroid_Medium_01.prefab
+  artifactKey: Guid(19be29ad10d939140b765ff68a729278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_Asteroid_Medium_01.prefab using Guid(19be29ad10d939140b765ff68a729278) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2bd96dc5b280dea3243a23f3e528e9e') in 0.0188499 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 117
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.775755 seconds.
+  path: Assets/Prefarbs/PF_Asteroid_Medium_01.prefab
+  artifactKey: Guid(19be29ad10d939140b765ff68a729278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_Asteroid_Medium_01.prefab using Guid(19be29ad10d939140b765ff68a729278) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3dcaf158d0d40c73983ae11bd72d71e6') in 0.0145515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 124
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.367380 seconds.
+  path: Assets/Prefarbs/PF_Asteroid_Small_01.prefab
+  artifactKey: Guid(ce7faa1d88d2970479ac6adf2e8858e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_Asteroid_Small_01.prefab using Guid(ce7faa1d88d2970479ac6adf2e8858e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3304b6aa61e9970a58220717cb24314') in 0.0224169 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 117
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.570394 seconds.
+  path: Assets/Prefarbs/PF_Asteroid_Small_01.prefab
+  artifactKey: Guid(ce7faa1d88d2970479ac6adf2e8858e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_Asteroid_Small_01.prefab using Guid(ce7faa1d88d2970479ac6adf2e8858e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c0256bd212b3db1df9c80a1868fc742') in 0.0141443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 131
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.106357 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab
+  artifactKey: Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab using Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e3cbda81d5dfaa98a01c8d96741f301') in 0.0196013 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 105
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.915052 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab
+  artifactKey: Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab using Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b75d4176b8e890d6d30da5152d1d146') in 0.0110401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 105
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.343914 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab
+  artifactKey: Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab using Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3ffa20f93d94b56c554dd1c15c027e9') in 0.0107613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 105
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.998067 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab
+  artifactKey: Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab using Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9eccf8d36307d24d52658a8cc4df81b2') in 0.012407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 105
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.975571 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab
+  artifactKey: Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX medium.prefab using Guid(bf1535856be9b094cabb9e5676677129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae829d31e503a09ce226cd7f45aa17d7') in 0.012157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 105
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.568 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.519 seconds
+Domain Reload Profiling: 1086ms
+	BeginReloadAssembly (168ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (343ms)
+		LoadAssemblies (250ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (137ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (519ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (397ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (224ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 1.40 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7575 unused Assets / (5.0 MB). Loaded Objects now: 8827.
+Memory consumption went from 202.9 MB to 197.9 MB.
+Total: 7.179800 ms (FindLiveObjects: 0.702300 ms CreateObjectMapping: 0.294100 ms MarkObjects: 4.401700 ms  DeleteObjects: 1.781100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 230.637041 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX_big.prefab
+  artifactKey: Guid(9abbf52981cdc1147bebe511eb7fcd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX_big.prefab using Guid(9abbf52981cdc1147bebe511eb7fcd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f06d861f1d834a4708797925595d90f8') in 0.2743161 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 98
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.585 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.502 seconds
+Domain Reload Profiling: 1087ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (343ms)
+		LoadAssemblies (263ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (150ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (135ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (502ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (394ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (228ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7575 unused Assets / (4.9 MB). Loaded Objects now: 8850.
+Memory consumption went from 203.0 MB to 198.1 MB.
+Total: 7.800400 ms (FindLiveObjects: 0.735000 ms CreateObjectMapping: 0.477000 ms MarkObjects: 4.746800 ms  DeleteObjects: 1.841100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.539 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.512 seconds
+Domain Reload Profiling: 1051ms
+	BeginReloadAssembly (154ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (331ms)
+		LoadAssemblies (241ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (139ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (512ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (398ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (229ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 1.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7575 unused Assets / (5.3 MB). Loaded Objects now: 8853.
+Memory consumption went from 202.9 MB to 197.6 MB.
+Total: 7.907500 ms (FindLiveObjects: 0.732800 ms CreateObjectMapping: 0.502400 ms MarkObjects: 4.573100 ms  DeleteObjects: 2.098700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 521.034914 seconds.
+  path: Assets/Prefarbs/PF_Asteroid_Small_03.prefab
+  artifactKey: Guid(2853c5f61a1b49b45a8e1c0f194b0d6b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefarbs/PF_Asteroid_Small_03.prefab using Guid(2853c5f61a1b49b45a8e1c0f194b0d6b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '474eac4b50ed7b02e687ad03250563b6') in 0.124101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefarbs/PF_Asteroid_Medium_01.prefab
+  artifactKey: Guid(19be29ad10d939140b765ff68a729278) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefarbs/PF_Asteroid_Medium_01.prefab using Guid(19be29ad10d939140b765ff68a729278) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5bbef00aa8ca7bc295777b2dd7f8292') in 0.0154402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefarbs/PF_Asteroid_Small_02.prefab
+  artifactKey: Guid(f45cb668471e5d146bcccfa5666171eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefarbs/PF_Asteroid_Small_02.prefab using Guid(f45cb668471e5d146bcccfa5666171eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '27e685a9e2644d248e606b9f31ed3071') in 0.0199239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Prefarbs/PF_AsteroidDeathFX small.prefab
+  artifactKey: Guid(7a8da08d44358984ca0aed5be8c75a10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefarbs/PF_AsteroidDeathFX small.prefab using Guid(7a8da08d44358984ca0aed5be8c75a10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '947a83511dab66d7e07c817898c33a97') in 0.0146758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/VisualEffects/AsteroidDeathFX.vfx
+  artifactKey: Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/VisualEffects/AsteroidDeathFX.vfx using Guid(3c4a00307d89b6b4cbd90745877ae1a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '392409f2f152f63fa83c646d42ff6387') in 0.0130217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Prefarbs/PF_Asteroid_Medium_03.prefab
+  artifactKey: Guid(d86892a67d579f5438c2e93ea0e01516) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefarbs/PF_Asteroid_Medium_03.prefab using Guid(d86892a67d579f5438c2e93ea0e01516) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '44660269900be89684107abbaa338a6e') in 0.0194975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.602699 seconds.
+  path: Assets/Shaders
+  artifactKey: Guid(6e59a6f9307f8ee4ca1b220dfed30bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders using Guid(6e59a6f9307f8ee4ca1b220dfed30bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34545d9683ad48624afdf2cf52c16f77') in 0.000475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.926058 seconds.
+  path: Assets/Shaders
+  artifactKey: Guid(6e59a6f9307f8ee4ca1b220dfed30bc7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders using Guid(6e59a6f9307f8ee4ca1b220dfed30bc7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ccc706a1eab643925389bdca1581fad6') in 0.0083706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6609.469938 seconds.
+  path: Assets/Scenes/GameScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6a4dac5e524fb0f0a53b93f70f10fc42') in 0.0134731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+

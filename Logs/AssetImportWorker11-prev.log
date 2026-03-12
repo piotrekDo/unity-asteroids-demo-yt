@@ -1,0 +1,1149 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.10f1 (e35f0c77bd8e) revision 14901004'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Core' Language: 'pl' Physical Memory: 31887 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-piotr" at "2026-03-12T10:39:21.5221107Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-03-12T10:39:21Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+C:/Users/piotr/Desktop/UNITY/asteroids-demo-yt
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+54335
+-licensingIpc
+LicenseClient-piotr
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/piotr/Desktop/UNITY/asteroids-demo-yt
+C:/Users/piotr/Desktop/UNITY/asteroids-demo-yt
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [28076]  Target information:
+
+Player connection [28076]  * "[IP] 192.168.1.185 [Port] 0 [Flags] 2 [Guid] 4019161223 [EditorId] 4019161223 [Version] 1048832 [Id] WindowsEditor(7,Kombajn_piotrek) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28076] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28076] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 81.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/piotr/Desktop/UNITY/asteroids-demo-yt/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 5080 (ID=0x2c02)
+    Vendor:   NVIDIA
+    VRAM:     15977 MB
+    Driver:   32.0.15.9571
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              04bcbb61f85341eb95e952c943df8310
+  Correlation Id:          f081d6157c2908c12f757cb750cfdbaa
+  External correlation Id: 5339724032071816929
+  Machine Id:              zyBeOYHJWJ1cBqWZkwmfIUahB5I=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-piotr" (connect: 0.00s, validation: 0.00s, handshake: 0.76s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-piotr-notifications" at "2026-03-12T10:39:22.286024Z"
+[Licensing::Module] Licensing Background thread has ended after 0.76s
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001847 seconds.
+- Loaded All Assemblies, in  0.814 seconds
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.288 seconds
+Domain Reload Profiling: 1099ms
+	BeginReloadAssembly (91ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (137ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (538ms)
+		LoadAssemblies (89ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (536ms)
+			TypeCache.Refresh (535ms)
+				TypeCache.ScanAssembly (390ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (288ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (252ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (107ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 1375834625606-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  0.599 seconds
+Refreshing native plugins compatible for Editor in 1.67 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.855 seconds
+Domain Reload Profiling: 1450ms
+	BeginReloadAssembly (127ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (407ms)
+		LoadAssemblies (267ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (207ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (132ms)
+			BuildScriptInfoCaches (54ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (855ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (629ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (153ms)
+			ProcessInitializeOnLoadAttributes (343ms)
+			ProcessInitializeOnLoadMethodAttributes (117ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.30 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7577 unused Assets / (5.2 MB). Loaded Objects now: 8481.
+Memory consumption went from 192.2 MB to 187.1 MB.
+Total: 8.350300 ms (FindLiveObjects: 0.997400 ms CreateObjectMapping: 0.289500 ms MarkObjects: 4.623300 ms  DeleteObjects: 2.439600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 244348.056598 seconds.
+  path: Assets/Shaders/New Shader Graph.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/New Shader Graph.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4383a8608db00dd41eca9547c9e97fb9') in 0.0769117 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037492 seconds.
+  path: Assets/Shaders/New Shader Graph.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/New Shader Graph.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29275735d99011148e30080816be00e5') in 0.60623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.574279 seconds.
+  path: Assets/Shaders/New Shader Graph.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/New Shader Graph.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '828c31cdf357dbd86a57c2dd652264a8') in 0.0133762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.632656 seconds.
+  path: Assets/Shaders/New Shader Graph.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/New Shader Graph.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0b91afaa95c942b007043d96f3ad1ed') in 0.100999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.380325 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa8ca21386f869159f4276b098454c3f') in 0.0969668 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.749281 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8998c70380903087d385d1d678aab3c2') in 0.0099912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.557157 seconds.
+  path: Assets/Scenes/GameScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22e94daea313ee002456779682f9a1d6') in 0.0102318 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.236335 seconds.
+  path: Assets/Shaders/New Material.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/New Material.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cecbb9c3b9fff683a1b3ef075eba53e') in 0.0126569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.974105 seconds.
+  path: Assets/Shaders/New Material.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/New Material.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f2f220d268699d677d71b14620aa40c') in 0.0103353 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.061252 seconds.
+  path: Assets/Shaders/Mat_Shield.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Mat_Shield.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea1c3d6b78d4c1cef44904265f521f9d') in 0.0056057 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.942332 seconds.
+  path: Assets/Shaders/Mat_Shield.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/Mat_Shield.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0930fc35c1afb31d26f3930afbee7ef9') in 0.0089138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 225.636831 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '834b7dfa3424c86fcefab2aee0f32266') in 0.0104405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.758253 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0da40f136fa4f439887de8212ae4da96') in 0.0099856 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.673298 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd66ad3601581415bc194ddea1b36961c') in 0.0100727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 130.945314 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '27cb7df86c72c484fd14ba6f2e9f53cd') in 0.0100766 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.483390 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e7542d66507a0c21161703fd38560c63') in 0.0105354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.567414 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '11d333efa4b935b4b854395787212540') in 0.0104286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.457550 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b2c300e021f2cb164a502316de9ea45') in 0.0104613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.679745 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e2ec6641a26ceae89d21bf459aae93b') in 0.0104919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.862160 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f56e58ef55de342876e1a3e4c1f496c') in 0.0097081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.884301 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f970f47b5c12bf6791ba9d42f547fc7d') in 0.0093207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.740167 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7563ac762e24ab1a43e0cf775c193d6b') in 0.0106424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.361368 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc756cbdf920eb2459445d87e8792de2') in 0.0095937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.609134 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '81b97c5fcd6a5d709940e4702b2ddd72') in 0.0098129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.521111 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99d1005facc45d2ced84551b25aeb4fc') in 0.012779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.191091 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f76af78d38d49f931ca12cd8e192838') in 0.0107024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.764964 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4c6dc3c4e53399d8320f78b53bd36c0b') in 0.0092582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 230.671103 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'adc3365de2bcf601570795a81c721d6a') in 0.0094868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.330293 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6e3feddbb87761743cc6f9c0ca5be92f') in 0.010304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.679368 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cf8f056e9207bb15dd34b15f4540cba3') in 0.0118699 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.691884 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cf2465004d49b329e94e16cb023868f2') in 0.0105749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.863191 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'beb0d6432c4282982a183c65aab91c3f') in 0.0117906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.325087 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60731c253d558f6ab4add2b47b794272') in 0.0117308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.574005 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c721a9e9ed2a3e3bb246124fb7d4f910') in 0.0101238 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 160.571566 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '29753c0af4ef2fc1577a8114cf3d1484') in 0.0111305 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.987406 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6fab0ac534c932d2f2df727dd70c328c') in 0.0101921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.323819 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '021017cb7b3efe17cf897644af074280') in 0.0109573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.029360 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5dc465c327d4069624e159a86e2204dc') in 0.0105832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 229.880979 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24bb7de477d4626f869d57cda7e78738') in 0.0093605 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.299989 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7a348205b5e7a71e1785cb8b21225e71') in 0.0091042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.406139 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b484b41054f63b6556c042682bf41bb6') in 0.0102352 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.464552 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '539f040f55c8d108a6615aab50916a03') in 0.0102092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.619784 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '598dbda46c5d2e5de5a311e65bc463ff') in 0.0102245 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.743816 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1a6930a1ffa868970d31a48f5913f36b') in 0.0103801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.465749 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2678e5adbf5da8ab65ecf375d2290110') in 0.0107354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.936686 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a725cdf2cff3f0fe5b010e7838a3b31e') in 0.0106262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.120825 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab1e6c3f1d60a1e94d47986be52251e8') in 0.0094304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.418475 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4bf538dcc56012eaed387f9c1b5b69d6') in 0.0107956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 407.373051 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eaebc4dd0d590064be494ead401ea860') in 0.0112543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.654391 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '89afc20217ae3e50a8f4e54740490636') in 0.0119747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.592983 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b6168f03a62e9ddce4fa03f94617abd1') in 0.008899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.758381 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22600b5d2b6347018f074960e5b44cdd') in 0.0096886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.165427 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '135212d49e75d717986f3f0f55c5bb4b') in 0.0105102 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.399259 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'de939c632b5b95df4a8b9a753b70cb7a') in 0.0116992 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.651224 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49db2a5dcf7a9312fd35d85f080a13cf') in 0.0103732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.302331 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7a1265ea0a1377ac2aaa4238d95fd927') in 0.0104684 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.005523 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b55649f471228856dedac1d56bf6c322') in 0.0095304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.070296 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b0bc95f897b644e9883991f996b57dad') in 0.0099746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.891286 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16fd970f393d302f653dfbf4d89fc1f4') in 0.0130455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.981504 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4952194dbb344c82ab3c446c40adc587') in 0.0096146 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 138.108497 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '151ca0e3dac10f604ae8b2cccabb5bb5') in 0.0105333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.573495 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9695add62d62b93bb7a014af20a87e16') in 0.0105506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.480478 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab158d65537651032e3f8f936483915b') in 0.0112719 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.876811 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '75806bbbf26ed2d6a339d30ba3abad8f') in 0.01065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.408788 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddbc75c9dbcc20d247a2810736f78538') in 0.0107322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.471685 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49f00ad27335efb93a9caeda383e502f') in 0.0110761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.986460 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b882d9e7b716236ab374e255f3d5f4af') in 0.010889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 315.118105 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c522a607a9d53905c2036a784ca64cb0') in 0.0123607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 247.546939 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '85d10bec16b7e01d2ba01449dc5d5ebb') in 0.0109908 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.365151 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f44e91cf591d9c20edeb65fee7e9f3e5') in 0.0082169 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.145463 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd074659996cd3794e66d566f5cf13d2e') in 0.0103878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.004951 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f53c1e17abdfae39bbb93602ec4cecb6') in 0.0106358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.332603 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5dc96815473c793dda79cce66e898c21') in 0.010335 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.986523 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f506b9fdb75c1a27c528c67fd277a1fb') in 0.0109081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.544475 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3207225c1f30c0039bd60d3e72dc2f71') in 0.0104473 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.821345 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a667cda848c77df0e99b230f3946aab') in 0.0097925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.829818 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6dd24bf5886c4a9207771835a9b1c684') in 0.011234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.961423 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5daa9d3ddb7ef8ac7ac2aa596338ec18') in 0.0106518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.874502 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2fa879b918edd18191dfcb929a61c878') in 0.0103293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.963256 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ebb3d87678eb3e9db6fed5fd34f70d49') in 0.0094145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.652439 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7df22e40771ea8935b110256c1cfb3c') in 0.0106321 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 146.317656 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '181df3db9bc387aa7e403704c5d0043f') in 0.0104512 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.082490 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '03335424fc6da58f144dd8a7bc2362fc') in 0.0099932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.773176 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ecb89c2870beedd3ea7933d5e15601b8') in 0.010199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.737008 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4be28e7feb7b8d369e142d2733e69b89') in 0.0098031 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.273438 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bfa6fe8360b369e4020bf89421880453') in 0.0106693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.014464 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1377dfba69699494e6548207d04a3d39') in 0.010851 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.704593 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0825cf160ed2ec0e3ea3ca351468a783') in 0.0114537 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.841890 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1140a34f64ed4e4bda7425a2aaded29d') in 0.0109947 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.366667 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43be68604b22f2569bd3a8d89775cc46') in 0.0097573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.257102 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6db15e077a0982f37f8036cfb8bf86ad') in 0.0096897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.129478 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1113e5578670776fbaf092446a9ba46') in 0.0095931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.288166 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23aa49b3bc5a27206bb521f2b2972711') in 0.0100588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.808722 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5233becae0a89e5c3b73ff66c02a766b') in 0.0099456 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.338366 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb01dc4f3e169930f5bed94584ecd383') in 0.0097046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.605180 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ba4a7ad1eea874adab839304f4db6fb1') in 0.0098182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.750855 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2ecb59475675d011931ebb31ad019196') in 0.009767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.859546 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd63d34e77e85920b1e182bda991abf3a') in 0.0101687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.267062 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb6610c3f24ce6d210e03965a19441e1') in 0.0100677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.715171 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '25c7980973e6d361e9fca8f5307a93eb') in 0.0105535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 284.696072 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63ddb20c710204e542ffe956267691e6') in 0.0089157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 282.416405 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2cf151f95d7dd38ca8739f472f0f5320') in 0.0103073 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 154.926376 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ae5a361a15c0e96ec9c7a7d946a0223') in 0.0117565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.504281 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b4e7ebded7509e900d47bb2a51fa7fda') in 0.0102714 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.533614 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a502fa336b4c0b2e24815cbfc86c5de8') in 0.0110528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.380361 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2c5b1acd87f840d2bba93bb50d90bb3d') in 0.0128129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.501285 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c88e4866110f58cd7b4f77b47728b82') in 0.0120271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.048328 seconds.
+  path: Assets/Shaders/Mat_Shield.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Mat_Shield.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd9f694534ac77bea645db2cba9d96276') in 0.1131453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.807731 seconds.
+  path: Assets/Shaders/Mat_Shield.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/Mat_Shield.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '05d6a1db0e7dbfb8cd7d6a4c52ab5f5e') in 0.0101397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.018763 seconds.
+  path: Assets/Shaders/Mat_Shield.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Mat_Shield.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4bedec6c7f7ff1adf99d0fec503d769') in 0.1137132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.820964 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd7480fdc72acaa9f79ced25ae812b465') in 0.0110927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.209187 seconds.
+  path: Assets/Shaders/Mat_Shield.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Mat_Shield.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e23d77f1796e0d304736126106822a11') in 0.0061001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.931555 seconds.
+  path: Assets/Shaders/Mat_Shield.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/Mat_Shield.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43b18b3fcf5a30d7e1c3f86e6ff3c95c') in 0.0099573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.352058 seconds.
+  path: Assets/Shaders/Mat_Shield.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Mat_Shield.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4d236fe0fe793ba6066fa42dc13a8da') in 0.1211099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.803749 seconds.
+  path: Assets/Shaders/ShieldShader.shadergraph
+  artifactKey: Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Shaders/ShieldShader.shadergraph using Guid(ee7f75ecde9b3784ca8e843a79d1a1c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6efd21175eebe4e6ba0fa581affa111a') in 0.010622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.021101 seconds.
+  path: Assets/Shaders/Mat_Shield.mat
+  artifactKey: Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Mat_Shield.mat using Guid(709bbe32346305845a92d9f25a3e61b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ba4542cd7988be4c63efe30f9a513df') in 0.1157554 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.205960 seconds.
+  path: Assets/Scenes/GameScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '184689d2d47625630a29ce4c9e82f6ba') in 0.010659 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+

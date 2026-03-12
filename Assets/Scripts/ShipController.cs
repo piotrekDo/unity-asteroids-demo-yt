@@ -16,17 +16,24 @@ public class ShipController : BoundedEntity {
     [SerializeField] private float m_moveSpeed;
     [SerializeField] private float m_boostSpeed;
     [SerializeField] private float m_stoppingPower;
+    [SerializeField] private float m_invulnerableTime;
 
     [SerializeField] private GameObject m_bulletPrefarb;
     [SerializeField] private GameObject m_deathVFXPrefarb;
     [SerializeField] private float m_fireDeley;
     [SerializeField] private float m_fireCount;
     [SerializeField] private bool m_isBoosting;
+    [SerializeField] private AnimationCurve m_fullscreenEase;
 
+    [SerializeField] private Material m_fullscreenEffectMat;
+    [SerializeField] private GameObject m_shield;
     [SerializeField] private VisualEffect m_leftThruster;
     [SerializeField] private VisualEffect m_rightThruster;
 
     [SerializeField] private bool m_isDead;
+
+    Coroutine dmgRoutine;
+    private bool m_isInvulnerable;
 
     private bool m_isFiring;
     private float m_fireTimer = 0f;
@@ -48,12 +55,24 @@ public class ShipController : BoundedEntity {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
+        if (m_isDead || m_isInvulnerable)
+            return;
         if (collision.gameObject.TryGetComponent(out AsteroidController asteroid)) {
             LoseHealth(asteroid.MaxHealth);
+            if (dmgRoutine != null)
+                StopCoroutine(dmgRoutine);
+
+            dmgRoutine = StartCoroutine(HitRoutine());
         }
     }
 
     protected override void OnDie() {
+        if (dmgRoutine != null) {
+            StopCoroutine(dmgRoutine);
+            dmgRoutine = null;
+        }
+
+        m_fullscreenEffectMat.SetFloat("_Amount", 0f);
         GameEvents.Instance.PlayerDies();
         SpawnVFX(m_deathVFXPrefarb);
         SetPlayerAsDead();
@@ -68,7 +87,13 @@ public class ShipController : BoundedEntity {
     }
 
     private IEnumerator RespawnPlayer() {
-        yield return new WaitForSeconds(.5f);
+        if (dmgRoutine != null) {
+            StopCoroutine(dmgRoutine);
+            dmgRoutine = null;
+        }
+        m_fullscreenEffectMat.SetFloat("_Amount", 0f);
+
+        yield return new WaitForSeconds(.75f);
 
         m_rigidbody.position = Vector2.zero;
         m_rigidbody.rotation = 0f;
@@ -81,14 +106,15 @@ public class ShipController : BoundedEntity {
 
         m_spriteRenderer.enabled = true;
         ResetHealth();
-
-        yield return new WaitForSeconds(.5f);
-
-        m_isDead = false;
-        m_rigidbody.simulated = true;
-
-        yield return new WaitForSeconds(2f);
+        m_shield.SetActive(true);
         m_collider.enabled = true;
+        m_rigidbody.simulated = true;
+        m_isDead = false;
+        m_isInvulnerable = true;
+
+        yield return new WaitForSeconds(m_invulnerableTime);
+        m_shield.SetActive(false);
+        m_isInvulnerable = false;
     }
 
     void EnableThrusters(bool left, bool right) {
@@ -162,6 +188,21 @@ public class ShipController : BoundedEntity {
 
         if (m_isFiring && m_fireTimer <= 0f) {
             TrySpawnBullet();
+        }
+    }
+
+    private IEnumerator HitRoutine() {
+        float amount = 0f;
+        while (amount < 1f) {
+            yield return new WaitForSeconds(.05f / 100);
+            amount += .1f;
+            m_fullscreenEffectMat.SetFloat("_Amount", m_fullscreenEase.Evaluate(amount));
+        }
+
+        while (amount > 0f) {
+            yield return new WaitForSeconds(.05f / 100);
+            amount -= .1f;
+            m_fullscreenEffectMat.SetFloat("_Amount", m_fullscreenEase.Evaluate(amount));
         }
     }
 }
