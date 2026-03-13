@@ -142,6 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd1666f9ef6dfb34ab5aea55363e5b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  m_forwardSpeed: 50
+  m_forwardSpeed: 80
   m_maximumLifetime: 1
   m_bulltetHitFX: {fileID: 2901022758021389007, guid: 2211e6c2d26d95d43916b096805ee248, type: 3}

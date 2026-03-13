@@ -6,6 +6,7 @@ public class ScoreManager : MonoBehaviour {
     [SerializeField] private int m_topScore;
     [SerializeField] private int m_currentLives;
     [SerializeField] private int m_maxLives;
+    [SerializeField] private SoundEffectHandler m_collectableFX;
 
     private void Awake() {
         ClearScore();
@@ -37,11 +38,15 @@ public class ScoreManager : MonoBehaviour {
         }
     }
 
-    public void AddScore(int amount = 1) {
+    public void AddScore(int amount = 1, bool iscCollectable = false) {
         m_score += amount;
 
         if (m_score >= m_topScore)
             m_topScore = m_score;
+
+        if (iscCollectable) {
+            m_collectableFX.Play();
+        }
     }
 
     public void ClearScore() {

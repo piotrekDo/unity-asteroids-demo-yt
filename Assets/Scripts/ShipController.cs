@@ -9,27 +9,34 @@ public class ShipController : BoundedEntity {
     private float m_turnInput;
     private float m_forwardInput;
 
+    [Header("Sound Effects")]
+    [SerializeField] private SoundEffectHandler m_thrustSoundFX;
+    [SerializeField] private SoundEffectHandler m_boostSoundFX;
+    [SerializeField] private SoundEffectHandler m_fireSoundFX;
+    [SerializeField] private SoundEffectHandler m_deathSoundFX;
+    [SerializeField] private SoundEffectHandler m_hitSoundFX;
 
-    [SerializeField] private float m_maxBoostingSpeed;
+    [Header("Move")]
+    [SerializeField] private float m_moveSpeed;
     [SerializeField] private float m_maxSpeed;
     [SerializeField] private float m_turnSpeed;
-    [SerializeField] private float m_moveSpeed;
+    [SerializeField] private float m_maxBoostingSpeed;
     [SerializeField] private float m_boostSpeed;
     [SerializeField] private float m_stoppingPower;
-    [SerializeField] private float m_invulnerableTime;
-
-    [SerializeField] private GameObject m_bulletPrefarb;
-    [SerializeField] private GameObject m_deathVFXPrefarb;
-    [SerializeField] private float m_fireDeley;
-    [SerializeField] private float m_fireCount;
     [SerializeField] private bool m_isBoosting;
-    [SerializeField] private AnimationCurve m_fullscreenEase;
-
-    [SerializeField] private Material m_fullscreenEffectMat;
-    [SerializeField] private GameObject m_shield;
     [SerializeField] private VisualEffect m_leftThruster;
     [SerializeField] private VisualEffect m_rightThruster;
 
+    [Header("Firing")]
+    [SerializeField] private float m_fireDeley;
+    [SerializeField] private GameObject m_bulletPrefarb;
+
+    [Header("Other Referecnces")]
+    [SerializeField] private float m_invulnerableTime;
+    [SerializeField] private GameObject m_deathVFXPrefarb;
+    [SerializeField] private AnimationCurve m_fullscreenEase;
+    [SerializeField] private Material m_fullscreenEffectMat;
+    [SerializeField] private GameObject m_shield;
     [SerializeField] private bool m_isDead;
 
     Coroutine dmgRoutine;
@@ -58,6 +65,7 @@ public class ShipController : BoundedEntity {
         if (m_isDead || m_isInvulnerable)
             return;
         if (collision.gameObject.TryGetComponent(out AsteroidController asteroid)) {
+            m_hitSoundFX.Play();
             LoseHealth(asteroid.MaxHealth);
             if (dmgRoutine != null)
                 StopCoroutine(dmgRoutine);
@@ -71,8 +79,14 @@ public class ShipController : BoundedEntity {
             StopCoroutine(dmgRoutine);
             dmgRoutine = null;
         }
-
+        m_thrustSoundFX.StopImmediate();
+        m_boostSoundFX.StopImmediate();
+        m_turnInput = 0f;
+        m_forwardInput = 0f;
+        m_isBoosting = false;
+        m_isFiring = false;
         m_fullscreenEffectMat.SetFloat("_Amount", 0f);
+        m_deathSoundFX.Play();
         GameEvents.Instance.PlayerDies();
         SpawnVFX(m_deathVFXPrefarb);
         SetPlayerAsDead();
@@ -123,11 +137,16 @@ public class ShipController : BoundedEntity {
     }
 
     void OnBoost(InputValue value) {
+        if (m_isDead)
+            return;
+
         m_isBoosting = value.Get<float>() > 0f;
 
         if (m_isBoosting) {
+            m_boostSoundFX.FadeIn();
             EnableThrusters(true, true);
         } else if (m_forwardInput == 0) {
+            m_boostSoundFX.FadeOut();
             EnableThrusters(false, false);
         }
 
@@ -136,14 +155,19 @@ public class ShipController : BoundedEntity {
     }
 
     void OnMove(InputValue value) {
+        if (m_isDead)
+            return;
+
         Vector2 moveInputDirection = value.Get<Vector2>();
         m_turnInput = moveInputDirection.x;
         m_forwardInput = moveInputDirection.y;
 
         if (m_forwardInput > 0) {
             EnableThrusters(true, true);
+            m_thrustSoundFX.FadeIn();
         } else {
             EnableThrusters(false, false);
+            m_thrustSoundFX.FadeOut();
         }
     }
 
@@ -155,7 +179,7 @@ public class ShipController : BoundedEntity {
         GameObject bullet = Instantiate(m_bulletPrefarb);
         bullet.transform.position = transform.position + transform.up * 3f;
         bullet.transform.up = transform.up;
-
+        m_fireSoundFX.Play();
         // reset cooldown
         m_fireTimer = m_fireDeley;
     }
@@ -194,13 +218,13 @@ public class ShipController : BoundedEntity {
     private IEnumerator HitRoutine() {
         float amount = 0f;
         while (amount < 1f) {
-            yield return new WaitForSeconds(.05f / 100);
+            yield return new WaitForSeconds(.05f );
             amount += .1f;
             m_fullscreenEffectMat.SetFloat("_Amount", m_fullscreenEase.Evaluate(amount));
         }
 
         while (amount > 0f) {
-            yield return new WaitForSeconds(.05f / 100);
+            yield return new WaitForSeconds(.05f);
             amount -= .1f;
             m_fullscreenEffectMat.SetFloat("_Amount", m_fullscreenEase.Evaluate(amount));
         }

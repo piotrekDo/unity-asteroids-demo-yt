@@ -6,9 +6,12 @@ public class HUD : MonoBehaviour {
     private UIDocument m_uiDocument;
 
     [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] private SoundEffectHandler m_focusSound;
+    [SerializeField] private SoundEffectHandler m_submitSound;
     private VisualElement m_gameOverScreen;
     private VisualElement m_retryButton;
     private VisualElement m_quitButton;
+
 
     private void OnEnable() {
         m_uiDocument = gameObject.GetComponent<UIDocument>();
@@ -25,7 +28,10 @@ public class HUD : MonoBehaviour {
         Clickable quitClickable = new Clickable(() => HandleQuitEvent());
 
         m_retryButton.AddManipulator(retryClickable);
+        m_retryButton.AddManipulator(new UiSoundManipulator(m_focusSound, m_submitSound));
         m_quitButton.AddManipulator(quitClickable);
+        m_quitButton.AddManipulator(new UiSoundManipulator(m_focusSound, m_submitSound));
+
 
         GameEvents.Instance.OnGameOver += OnGaneOver;
     }

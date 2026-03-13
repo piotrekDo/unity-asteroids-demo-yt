@@ -7,7 +7,7 @@ public class Collectable : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision) {
 
         if (collision.TryGetComponent(out ShipController ship)) {
-            GameEvents.Instance.AddToScore(m_pickupScore);
+            GameEvents.Instance.AddToScore(m_pickupScore, true);
             Destroy(gameObject);
         }
     }
