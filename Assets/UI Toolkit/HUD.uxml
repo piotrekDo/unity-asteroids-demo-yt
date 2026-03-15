@@ -16,9 +16,9 @@
                 </Bindings>
             </ui:Label>
         </ui:VisualElement>
-        <ui:VisualElement name="GameOver" class="game-over-bg hidden" style="flex-grow: 0;">
+        <ui:VisualElement name="GameOver" enabled="true" class="game-over-bg" style="flex-grow: 0; opacity: 1; display: none;">
             <ui:VisualElement name="CenterPanel" style="flex-grow: 0; width: 500px; height: 650px; align-items: center; justify-content: center; background-size: 50% 100%;">
-                <ui:Label text="GAME OVER" name="GameOverLabel" style="color: rgb(242, 121, 0); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;); font-size: 59px; -unity-text-align: middle-center; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(232, 167, 0); width: 100%;"/>
+                <ui:Label text="GAME OVER" name="GameOverLabel" style="color: rgb(242, 121, 0); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;); font-size: 59px; -unity-text-align: middle-center; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(232, 167, 0); width: 100%; display: flex;"/>
                 <ui:VisualElement name="Scores" data-source-type="ScoreManager, Assembly-CSharp" style="flex-grow: 0; height: 100px; aspect-ratio: auto;">
                     <ui:VisualElement name="CurentScoreDiv" style="flex-grow: 0; flex-direction: row;">
                         <ui:Label text="Your Score" name="CurentScorelabel" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;); font-size: 20px; color: rgb(255, 255, 240);"/>

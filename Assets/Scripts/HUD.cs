@@ -27,10 +27,10 @@ public class HUD : MonoBehaviour {
         Clickable retryClickable = new Clickable(() => HandleRetryEvent());
         Clickable quitClickable = new Clickable(() => HandleQuitEvent());
 
-        m_retryButton.AddManipulator(retryClickable);
         m_retryButton.AddManipulator(new UiSoundManipulator(m_focusSound, m_submitSound));
-        m_quitButton.AddManipulator(quitClickable);
+        m_retryButton.AddManipulator(retryClickable);
         m_quitButton.AddManipulator(new UiSoundManipulator(m_focusSound, m_submitSound));
+        m_quitButton.AddManipulator(quitClickable);
 
 
         GameEvents.Instance.OnGameOver += OnGaneOver;
@@ -41,12 +41,12 @@ public class HUD : MonoBehaviour {
     }
 
     private void OnGaneOver() {
-        m_gameOverScreen.RemoveFromClassList("hidden");
+        m_gameOverScreen.style.display = DisplayStyle.Flex;
     }
 
     private void HandleRetryEvent() {
         GameEvents.Instance.Retry();
-        m_gameOverScreen.AddToClassList("hidden");
+        m_gameOverScreen.style.display = DisplayStyle.None;
     }
 
     private void HandleQuitEvent() {
