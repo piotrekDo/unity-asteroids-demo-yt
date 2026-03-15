@@ -17,8 +17,8 @@ public class HUD : MonoBehaviour {
         m_uiDocument = gameObject.GetComponent<UIDocument>();
 
         VisualElement root = m_uiDocument.rootVisualElement;
-        VisualElement topBar = root.Q<VisualElement>("TopBar");
-        topBar.dataSource = scoreManager;
+        VisualElement mainContainer = root.Q<VisualElement>("Container");
+        mainContainer.dataSource = scoreManager;
 
         m_gameOverScreen = root.Q<VisualElement>("GameOver");
         m_retryButton = m_gameOverScreen.Q<VisualElement>("RetryButton");
@@ -52,7 +52,7 @@ public class HUD : MonoBehaviour {
     private void HandleQuitEvent() {
         Application.Quit();
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.EnterPlaymode();
+        UnityEditor.EditorApplication.ExitPlaymode();
 #endif
     }
 }

@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Background" class="background" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Space_Background.png?fileID=2800000&amp;guid=1e252108c01e275468d378fe033a1aa0&amp;type=3#Space_Background&quot;);">
+        <ui:VisualElement name="MenuContainer" class="main-container" style="flex-grow: 1;">
+            <ui:VisualElement name="LogoContainer" class="logo-container" style="flex-grow: 0; align-items: center; justify-content: center; padding-top: 50px;">
+                <ui:Image source="project://database/Assets/asteroidLogo.png?fileID=2800000&amp;guid=d3a66228d66191144a012fee4d15ba7d&amp;type=3#asteroidLogo" style="height: 263px; width: 634px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="OptionsContainer" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement name="Spacer" class="spacer" style="flex-grow: 1; flex-shrink: 1; flex-basis: 25%;"/>
+                <ui:VisualElement name="Options" class="buttons-container" style="flex-grow: 1; flex-basis: 50%; justify-content: center; align-items: center; padding-bottom: 10px;">
+                    <ui:VisualElement name="PlayButton" class="button" style="flex-grow: 0; width: 300px; height: 70px; -unity-text-outline-color: rgb(77, 113, 141); -unity-text-outline-width: 2px; border-top-color: rgb(52, 131, 155); border-left-color: rgb(52, 131, 155); border-right-color: rgb(52, 131, 155); border-bottom-color: rgb(52, 131, 155); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; align-items: center; flex-direction: row; justify-content: center; padding-bottom: 0; margin-bottom: 20px;">
+                        <ui:Label text="Play&#x9;" class="button-label" style="font-size: 30px; color: rgb(255, 245, 238); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;);"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ExitButton" class="button" style="flex-grow: 0; width: 300px; height: 70px; -unity-text-outline-color: rgb(77, 113, 141); -unity-text-outline-width: 2px; border-top-color: rgb(52, 131, 155); border-left-color: rgb(52, 131, 155); border-right-color: rgb(52, 131, 155); border-bottom-color: rgb(52, 131, 155); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; align-items: center; flex-direction: row; justify-content: center;">
+                        <ui:Label text="Exit&#x9;" class="button-label" style="font-size: 30px; color: rgb(255, 245, 238); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;);"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ShipLogo" class="ship-logo" style="flex-grow: 0; flex-shrink: 0; flex-basis: 25%;">
+                    <ui:Image source="project://database/Assets/Sprites/ship.png?fileID=2800000&amp;guid=e731e401401d204438244044e38b564a&amp;type=3#ship" style="flex-basis: 50%; flex-grow: 1; display: flex; width: 200px; height: 300px; rotate: -45deg;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

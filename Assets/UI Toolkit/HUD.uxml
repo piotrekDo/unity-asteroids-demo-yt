@@ -3,7 +3,7 @@
     <ui:VisualElement name="Container" class="container">
         <ui:VisualElement name="TopBar" class="top-bar" style="background-color: rgba(0, 0, 0, 0.11); padding-left: 25px; padding-right: 25px;">
             <ui:Label text="Score: " name="ScoreLabel" emoji-fallback-support="false" class="score-label"/>
-            <ui:Label text="00" name="ScoreValue" data-source-type="ScoreManager, Assembly-CSharp" class="score-value">
+            <ui:Label text="00" name="ScoreValue" data-source-type="ScoreManager, Assembly-CSharp" usage-hints="None" class="score-value">
                 <Bindings>
                     <ui:DataBinding property="text" data-source-path="m_score" binding-mode="ToTarget"/>
                 </Bindings>
@@ -16,10 +16,28 @@
                 </Bindings>
             </ui:Label>
         </ui:VisualElement>
-        <ui:VisualElement name="GameOver" class="game-over-bg hidden">
+        <ui:VisualElement name="GameOver" class="game-over-bg hidden" style="flex-grow: 0;">
             <ui:VisualElement name="CenterPanel" style="flex-grow: 0; width: 500px; height: 650px; align-items: center; justify-content: center; background-size: 50% 100%;">
                 <ui:Label text="GAME OVER" name="GameOverLabel" style="color: rgb(242, 121, 0); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;); font-size: 59px; -unity-text-align: middle-center; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(232, 167, 0); width: 100%;"/>
-                <ui:VisualElement name="RetryButton" class="button" style="margin-top: 50px;">
+                <ui:VisualElement name="Scores" data-source-type="ScoreManager, Assembly-CSharp" style="flex-grow: 0; height: 100px; aspect-ratio: auto;">
+                    <ui:VisualElement name="CurentScoreDiv" style="flex-grow: 0; flex-direction: row;">
+                        <ui:Label text="Your Score" name="CurentScorelabel" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;); font-size: 20px; color: rgb(255, 255, 240);"/>
+                        <ui:Label text="00" name="CurentScoreVal" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;); font-size: 20px; color: rgb(255, 235, 205);">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="m_score" binding-mode="ToTarget"/>
+                            </Bindings>
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="MaxScoreDiv" style="flex-grow: 0; flex-direction: row;">
+                        <ui:Label text="Your Score" name="MaxtScorelabel" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;); font-size: 20px; color: rgb(255, 255, 240);"/>
+                        <ui:Label text="00" name="MaxScoreVal" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-ExtraBold%20SDF.asset?fileID=11400000&amp;guid=808834d430607134186f5f990828d144&amp;type=2#Orbitron-ExtraBold SDF&quot;); font-size: 20px; color: rgb(255, 235, 205);">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="m_topScore" binding-mode="ToTarget"/>
+                            </Bindings>
+                        </ui:Label>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="RetryButton" class="button" style="margin-top: 0;">
                     <ui:Label text="Retry" name="RetryButtonLabel" style="color: rgb(255, 255, 240); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Orbitron-Medium.ttf?fileID=12800000&amp;guid=fe4835512b070754b98c53a05b7f34e0&amp;type=3#Orbitron-Medium&quot;);"/>
                 </ui:VisualElement>
                 <ui:VisualElement name="ExitButton" class="button" style="margin-top: 10px;">
