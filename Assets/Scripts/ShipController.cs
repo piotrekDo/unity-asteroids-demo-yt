@@ -47,18 +47,25 @@ public class ShipController : BoundedEntity {
 
     protected override void OnEnable() {
         GameEvents.Instance.OnRetry += OnRetry;
+        GameEvents.Instance.OnGameOver += OnGameOver;
         base.OnEnable();
     }
 
     protected override void OnDisable() {
         GameEvents.Instance.OnRetry -= OnRetry;
+        GameEvents.Instance.OnGameOver -= OnGameOver;
         base.OnDisable();
     }
 
+    private void OnGameOver() {
+        StopAllCoroutines();
+        m_shield.SetActive(false);
+        m_isInvulnerable = false;
+    }
 
     private void OnRetry() {
         SetPlayerAsDead();
-        StartCoroutine(RespawnPlayer());
+        StartCoroutine(RespawnPlayer(false));
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
@@ -79,6 +86,7 @@ public class ShipController : BoundedEntity {
             StopCoroutine(dmgRoutine);
             dmgRoutine = null;
         }
+        EnableThrusters(false, false);
         m_thrustSoundFX.StopImmediate();
         m_boostSoundFX.StopImmediate();
         m_turnInput = 0f;
@@ -87,10 +95,10 @@ public class ShipController : BoundedEntity {
         m_isFiring = false;
         m_fullscreenEffectMat.SetFloat("_Amount", 0f);
         m_deathSoundFX.Play();
-        GameEvents.Instance.PlayerDies();
         SpawnVFX(m_deathVFXPrefarb);
         SetPlayerAsDead();
-        StartCoroutine(RespawnPlayer());
+        StartCoroutine(RespawnPlayer(true));
+        GameEvents.Instance.PlayerDies();
     }
 
     protected void SetPlayerAsDead() {
@@ -100,7 +108,7 @@ public class ShipController : BoundedEntity {
         m_rigidbody.simulated = false;
     }
 
-    private IEnumerator RespawnPlayer() {
+    private IEnumerator RespawnPlayer(bool hasShields = true) {
         if (dmgRoutine != null) {
             StopCoroutine(dmgRoutine);
             dmgRoutine = null;
@@ -120,11 +128,13 @@ public class ShipController : BoundedEntity {
 
         m_spriteRenderer.enabled = true;
         ResetHealth();
-        m_shield.SetActive(true);
+        if (hasShields) {
+            m_shield.SetActive(true);
+            m_isInvulnerable = true;
+        }
         m_collider.enabled = true;
         m_rigidbody.simulated = true;
         m_isDead = false;
-        m_isInvulnerable = true;
 
         yield return new WaitForSeconds(m_invulnerableTime);
         m_shield.SetActive(false);
@@ -186,14 +196,14 @@ public class ShipController : BoundedEntity {
         if (m_isDead)
             return;
 
-        m_rigidbody.rotation -= (m_turnInput * (m_turnSpeed * 100f)) * Time.deltaTime;
+        m_rigidbody.rotation -= (m_turnInput * (m_turnSpeed * 100f)) * Time.fixedDeltaTime;
         if (m_isBoosting) {
-            m_rigidbody.AddRelativeForceY(m_boostSpeed * 100f * Time.deltaTime);
+            m_rigidbody.AddRelativeForceY(m_boostSpeed * 100f * Time.fixedDeltaTime);
         }
         if (m_forwardInput > 0) {
-            m_rigidbody.AddRelativeForceY((m_forwardInput * (m_moveSpeed * 100f)) * Time.deltaTime);
+            m_rigidbody.AddRelativeForceY((m_forwardInput * (m_moveSpeed * 100f)) * Time.fixedDeltaTime);
         } else if (m_forwardInput < 0) {
-            m_rigidbody.linearVelocity = Vector2.Lerp(m_rigidbody.linearVelocity, Vector2.zero, m_stoppingPower * Time.deltaTime);
+            m_rigidbody.linearVelocity = Vector2.Lerp(m_rigidbody.linearVelocity, Vector2.zero, m_stoppingPower * Time.fixedDeltaTime);
         }
 
         if (m_isBoosting && m_rigidbody.linearVelocity.magnitude > m_maxBoostingSpeed) {

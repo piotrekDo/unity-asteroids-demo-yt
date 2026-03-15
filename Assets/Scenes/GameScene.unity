@@ -1476,7 +1476,7 @@ MonoBehaviour:
   m_score: 0
   m_topScore: 0
   m_currentLives: 0
-  m_maxLives: 1
+  m_maxLives: 2
   m_collectableFX: {fileID: 139155823}
 --- !u!1 &1192642461
 GameObject:
