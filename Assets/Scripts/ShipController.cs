@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.VFX;
@@ -136,39 +136,37 @@ public class ShipController : BoundedEntity {
         m_rightThruster.enabled = right;
     }
 
+    void UpdateThrusters() {
+        bool anyThrust = m_forwardInput > 0 || m_isBoosting;
+        EnableThrusters(anyThrust, anyThrust);
+
+        if (anyThrust) {
+            if (m_isBoosting)
+                m_boostSoundFX.FadeIn();
+            else
+                m_thrustSoundFX.FadeIn();
+        } else {
+            m_boostSoundFX.FadeOut();
+            m_thrustSoundFX.FadeOut();
+        }
+    }
+
     void OnBoost(InputValue value) {
         if (m_isDead)
             return;
-
         m_isBoosting = value.Get<float>() > 0f;
-
-        if (m_isBoosting) {
-            m_boostSoundFX.FadeIn();
-            EnableThrusters(true, true);
-        } else if (m_forwardInput == 0) {
-            m_boostSoundFX.FadeOut();
-            EnableThrusters(false, false);
-        }
-
         m_leftThruster.SetBool("isBoosting", m_isBoosting);
         m_rightThruster.SetBool("isBoosting", m_isBoosting);
+        UpdateThrusters();
     }
 
     void OnMove(InputValue value) {
         if (m_isDead)
             return;
-
-        Vector2 moveInputDirection = value.Get<Vector2>();
-        m_turnInput = moveInputDirection.x;
-        m_forwardInput = moveInputDirection.y;
-
-        if (m_forwardInput > 0) {
-            EnableThrusters(true, true);
-            m_thrustSoundFX.FadeIn();
-        } else {
-            EnableThrusters(false, false);
-            m_thrustSoundFX.FadeOut();
-        }
+        Vector2 dir = value.Get<Vector2>();
+        m_turnInput = dir.x;
+        m_forwardInput = dir.y;
+        UpdateThrusters();
     }
 
     void OnAttack(InputValue value) {
@@ -184,7 +182,7 @@ public class ShipController : BoundedEntity {
         m_fireTimer = m_fireDeley;
     }
 
-    protected override void LateUpdate() {
+    private void FixedUpdate() {
         if (m_isDead)
             return;
 
@@ -204,21 +202,20 @@ public class ShipController : BoundedEntity {
             m_rigidbody.linearVelocity = m_rigidbody.linearVelocity.normalized * m_maxSpeed;
         }
 
-        base.LateUpdate();
+    }
 
-        if (m_fireTimer > 0f) {
+    private void Update() {
+        if (m_fireTimer > 0f)
             m_fireTimer -= Time.deltaTime;
-        }
 
-        if (m_isFiring && m_fireTimer <= 0f) {
+        if (m_isFiring && m_fireTimer <= 0f)
             TrySpawnBullet();
-        }
     }
 
     private IEnumerator HitRoutine() {
         float amount = 0f;
         while (amount < 1f) {
-            yield return new WaitForSeconds(.05f );
+            yield return new WaitForSeconds(.05f);
             amount += .1f;
             m_fullscreenEffectMat.SetFloat("_Amount", m_fullscreenEase.Evaluate(amount));
         }
