@@ -28,8 +28,11 @@ public class ShipController : BoundedEntity {
     [SerializeField] private VisualEffect m_rightThruster;
 
     [Header("Firing")]
-    [SerializeField] private float m_fireDeley;
+    [SerializeField] private int m_fireRatePerSecond;
     [SerializeField] private GameObject m_bulletPrefarb;
+    [SerializeField] private float m_overheatPerShot;
+    [SerializeField] private float m_overheatCooling;
+    [SerializeField] private OverheatBarController m_overheatBar;
 
     [Header("Other Referecnces")]
     [SerializeField] private float m_invulnerableTime;
@@ -42,12 +45,16 @@ public class ShipController : BoundedEntity {
     Coroutine dmgRoutine;
     private bool m_isInvulnerable;
 
+    private float m_fireDeley;
     private bool m_isFiring;
     private float m_fireTimer = 0f;
+    private float m_currentOverheat;
 
     protected override void OnEnable() {
+        m_fireDeley = 1f / m_fireRatePerSecond;
         GameEvents.Instance.OnRetry += OnRetry;
         GameEvents.Instance.OnGameOver += OnGameOver;
+        StartCoroutine(CoolingRoutine());
         base.OnEnable();
     }
 
@@ -139,6 +146,9 @@ public class ShipController : BoundedEntity {
         yield return new WaitForSeconds(m_invulnerableTime);
         m_shield.SetActive(false);
         m_isInvulnerable = false;
+
+        m_currentOverheat = 0;
+        m_overheatBar.SetFill(0, 1f);
     }
 
     void EnableThrusters(bool left, bool right) {
@@ -180,16 +190,22 @@ public class ShipController : BoundedEntity {
     }
 
     void OnAttack(InputValue value) {
-        m_isFiring = value.isPressed;
+        m_isFiring = value.Get<float>() > 0f;
     }
 
     private void TrySpawnBullet() {
+        if (m_currentOverheat >= 1f) {
+            return;
+        }
+
         GameObject bullet = Instantiate(m_bulletPrefarb);
         bullet.transform.position = transform.position + transform.up * 3f;
         bullet.transform.up = transform.up;
         m_fireSoundFX.Play();
         // reset cooldown
         m_fireTimer = m_fireDeley;
+        m_currentOverheat = Mathf.Clamp01(m_currentOverheat + m_overheatPerShot);
+        m_overheatBar.SetFill(m_currentOverheat, 1f);
     }
 
     private void FixedUpdate() {
@@ -234,6 +250,16 @@ public class ShipController : BoundedEntity {
             yield return new WaitForSeconds(.05f);
             amount -= .1f;
             m_fullscreenEffectMat.SetFloat("_Amount", m_fullscreenEase.Evaluate(amount));
+        }
+    }
+
+    private IEnumerator CoolingRoutine() {
+        while (true) {
+            yield return new WaitForSeconds(1f);
+            if (m_currentOverheat > 0) {
+                m_currentOverheat = Mathf.Max(0f, m_currentOverheat - m_overheatCooling);
+                m_overheatBar.SetFill(m_currentOverheat, 1f);
+            }
         }
     }
 }
